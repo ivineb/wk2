@@ -39,7 +39,12 @@ console.log('new juke', newJuke);
 const cars = [
     { make: 'Nissan', model: 'Rogue', color: 'orange' },
     { make: 'Nissan', model: 'Altima', color: 'blue' },
-    { make: 'Dodge', model: 'Viper', color: 'blue' }
-
+    { make: 'Dodge', model: 'Viper', color: 'blue' },
+    { make: 'VW', model: 'Beetle', color: 'pink' },
+    { make: 'Chevy', model: 'Blazer', color: 'black' },
+    { make: 'Dodge', model: 'Charger', color: 'green' }
 ];
+
 console.log('index 0 of cars color', cars[0].color);
+const randomIdx = Math.round(Math.random() * cars.length - 1);
+console.log('My car is a ' + cars[randomIdx].make + ' ' + cars[randomIdx].model + ' and it is the color ' + cars[randomIdx].color);
