@@ -1,5 +1,5 @@
 const favGames = [
-    { name: 'Catan', type: 'board game', numberOfPlayers: '3 or 4', rating: '4.7 on Amazon', shortDescription: 'game designed for mainstream gamers to play with their friends and family, no matter the time and place.' },
+    { name: 'Catan', type: 'board game', numberOfPlayers: '3 or 4 players ', rating: '4.7 on Amazon', shortDescription: 'game designed for mainstream gamers to play with their friends and family, no matter the time and place.' },
     { name: 'Limbo', type: 'video game', numberOfPlayers: 'a single player ', rating: '9/10 on IGN', shortDescription: 'puzzle-platform video game.' },
     { name: 'Exploding Kittens', type: 'cards game', numberOfPlayers: '5 players ', rating: '4.7 on Amazon', shortDescription: 'perfect card game for adults, teens and kids who are into kittens and explosions and laser beams and sometimes goats.' }
 ];
