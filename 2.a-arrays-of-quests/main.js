@@ -11,4 +11,4 @@ const myQuiz = [
   const yourAnswer = prompt(randomQuestionIdx.question);
   // alerting the response along with the correct answer
   alert("You answered " + yourAnswer + ". The correct answer was: " + randomQuestionIdx.answer);
-  
+
