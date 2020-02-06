@@ -1,2 +1,2 @@
-# wk2
+# Programming for the Web course.
  
