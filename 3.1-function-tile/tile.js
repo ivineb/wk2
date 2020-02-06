@@ -3,7 +3,7 @@ function setup () {
     noLoop();
 }
 
-function coolTile() {
+function popArt() {
     translate(0, 0); // (x and y)
     // sky
     fill('#c4e6e3');
@@ -28,6 +28,6 @@ function coolTile() {
 }
 
 function draw() {
-    coolTile();
+    popArt();
     noLoop();
 }
