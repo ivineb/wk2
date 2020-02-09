@@ -2,6 +2,8 @@ let rotateBy = 4;
 let scaleB = 0.2;
 let value = 0;
 
+window.alert('howdy! Press ok to see something rad, move the mouse for some color changes, and click the mouse when you feel dizzy and want this to stop.');
+
 function setup() {
     canvas = createCanvas(1000, 1000); // create canvas
     background(0);
@@ -48,3 +50,5 @@ function mouseMoved() { // if mouse moved, the color changes
       value = 0;
     }
 }
+
+
