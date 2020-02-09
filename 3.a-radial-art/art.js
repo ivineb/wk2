@@ -3,7 +3,7 @@ let scaleB = 0.2;
 let value = 0;
 
 function setup() {
-    canvas = createCanvas(1000, 1000);
+    canvas = createCanvas(1000, 1000); // create canvas
     background(0);
     angleMode(DEGREES);
 }
@@ -30,7 +30,7 @@ function makeArm(rotateBy) {
 }
 
 function draw() {
-    translate(500, 500);
+    translate(500, 500); // drawing placement
     rotate(rotateBy);
     scale(scaleB);
     makeArm(rotateBy);
@@ -39,10 +39,10 @@ function draw() {
     scaleB += 0.01;
 }
 
-function mousePressed() {
+function mousePressed() { // if mouse is pressed, the loop stops
    noLoop();
 }
-function mouseMoved() {
+function mouseMoved() { // if mouse moved, the color changes
     value = value + 5;
     if (value > 255) {
       value = 0;
