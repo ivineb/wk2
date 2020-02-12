@@ -50,5 +50,3 @@ function mouseMoved() { // if mouse moved, the color changes
       value = 0;
     }
 }
-
-
