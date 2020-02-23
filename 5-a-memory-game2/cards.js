@@ -99,7 +99,7 @@ class Card {
 }
 
 function draw() {
-  background('#434e52');
+  background('#1b262c');
   if (gameState.numMatched === gameState.totalPairs) {
     fill('teal');
     textFont(myFont);
