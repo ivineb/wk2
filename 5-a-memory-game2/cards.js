@@ -1,8 +1,9 @@
 const DOWN = 'down';
 const UP = 'up';
 let startingX = 100;
-let startingY = 150;
+let startingY = 170;
 let cards = [];
+let myFont;
 const gameState = {
   totalPairs: 8,
   flippedCards: [],
@@ -14,6 +15,8 @@ const gameState = {
 let cardFaceArray = [];
 let cardBack;
 function preload() {
+  // forgot about adding a font cause I was planning to back in assignment 4.a!
+  myFont = loadFont('assets/SangBleuKingdom.woff');
   cardBack = loadImage('img/card-back-pattern.png');
   cardFaceArray = [
     loadImage('img/1.jpg'),
@@ -70,6 +73,7 @@ class Card {
     } else {
       fill('teal');
       rect(this.x, this.y, this.width, this.height);
+      noStroke();
       image(cardBack, this.x, this.y);
     }
   }
@@ -95,9 +99,10 @@ class Card {
 }
 
 function draw() {
-  background(0);
+  background('#434e52');
   if (gameState.numMatched === gameState.totalPairs) {
     fill('teal');
+    textFont(myFont);
     textSize(66);
     text('You win!!!', 600, 625);
     noLoop();
@@ -111,12 +116,13 @@ function draw() {
   noLoop();
   gameState.flippedCards.length = 0;
   gameState.waiting = false;
-  fill(255);
+  fill('#fffdf9');
+  textFont(myFont);
   textSize(36);
   text('Attempts ' + gameState.attempts, 100, 700);
   text('Matches ' + gameState.numMatched, 100, 650);
-  textSize(24);
-  text('Make those pairs match!', 100, 110);
+  textSize(28);
+  text('Make those pairs match.', 100, 100);
 }
 
 function mousePressed() {
