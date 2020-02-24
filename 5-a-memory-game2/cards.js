@@ -16,7 +16,7 @@ let cardFaceArray = [];
 let cardBack;
 function preload() {
   // forgot about adding a font cause I was planning to back in assignment 4.a!
-  myFont = loadFont('assets/SangBleuKingdom.woff');
+  myFont = loadFont('assets/roboto-slab-v11-latin-regular.woff');
   cardBack = loadImage('img/card-back-pattern.png');
   cardFaceArray = [
     loadImage('img/1.jpg'),
