@@ -29,4 +29,4 @@ var moreFacts = new Vue({
         combat: 'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
         diet: 'Llamas are vegetarians and have very efficient digestive systems.'
     }
-})
+});
