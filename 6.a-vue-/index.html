@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Llama Facts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="llamaFacts">
+        <h1>{{message}}</h1>
+        <ol>
+          <li v-for="fact in facts" class="llama-facts-list">
+            {{ fact.text }}
+          </li>
+        </ol>
+    </div>
+
+
+    <div id="yourLLamaFacts">
+    <p><strong>{{ fact }}</strong></p>
+    <input v-model="fact">
+    </div>
+
+    <div id="moreFacts">
+        <h2>More Facts!</h2>
+        <ol class="more-facts-list">
+            <li> {{ growth }} </li>
+            <li> {{ combat }} </li>
+            <li> {{ diet }} </li>
+        </ol>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

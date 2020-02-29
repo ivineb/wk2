@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: helvetica, arial;
+    color: #394a6d;
+    font-size: 1.em;
+    border: 1em solid #394a6d;
+    background-image: url("https://images.unsplash.com/photo-1512666648029-2a86e8688984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2030&q=80");
+    background-size: 700px;
+    background-repeat: repeat;
+    margin: 2em;
+    line-height: 1.5;
+}
+
+#llamaFacts {
+    padding: 2em;
+    background: #c0ffb3;
+    max-width: 750px;
+}
+
+.llama-facts-list {
+    list-style: square;
+}
+
+#yourLLamaFacts {
+    padding: 2em;
+    background: #52de97;
+    max-width: 750px;
+}
+
+#moreFacts {
+    padding: 2em;
+    background: #3c9d9b;
+    max-width: 750px;
+    color: #c0ffb3;
+}
+
+.more-facts-list {
+    list-style: circle;
+}
