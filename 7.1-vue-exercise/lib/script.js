@@ -28,7 +28,7 @@ var vm = new Vue({
       { text: 'Alpacas are shy, but very curious, quiet, and intelligent.' },
       { text: 'Alpacas have three-compartments in their stomach, which allow them to efficiently convert hay and grass to energy.' },
       { text: 'The alpaca can thrive without consuming very much water, although an abundant, fresh water supply is most necessary.' },
-      { text: 'Alpacas’ feet are padded and leave the terrain undamaged as they graze, and do not pull the grasses up by the roots.' },
+      { text: 'Alpacas feet are padded and leave the terrain undamaged as they graze, and do not pull the grasses up by the roots.' },
       { text: 'Alpacas have a life expectancy of about 20 years.' },
       { text: 'The alpaca is an herbivore, grazing on grass and munching weeds, shrubs and trees.' }
     ],
