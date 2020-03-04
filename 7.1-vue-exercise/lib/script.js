@@ -8,8 +8,8 @@ var vm = new Vue({
     // facts about llamas using v-for
     llamas: [
       { text: 'One of the ways llamas communicate is by humming.' },
-      { text: 'Llamas are smart. They can distinguish between the neighbor’s dog and a predatory coyote.' },
-      { text: 'Llamas are very social and will ‘adopt’ a group of sheep or goats as their own herd.' },
+      { text: 'Llamas are smart. They can distinguish between the neighbors dog and a predatory coyote.' },
+      { text: 'Llamas are very social and will adopt a group of sheep or goats as their own herd.' },
       { text: 'Llamas will protect the herd by chasing off coyotes and other predators.' },
       { text: 'Llamas can grow as much as 6 feet tall.' },
       { text: 'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.' },
