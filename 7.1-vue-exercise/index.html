@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>llamas vs alpacas</title>
+        <link rel="stylesheet" href="lib/style.css">
+    </head>
+
+    <body>
+        <div id="llamaAlpaca" v-cloak>
+
+            <div v-bind:class="{ active: isActive, 'text-danger': hasError }" v-bind:style="[styleObject, overRideStyleObject]">
+                <h1>{{ llamaFacts }}</h1>
+                <ul>
+                    <li v-for="llama in llamas" class="llama-facts-list">
+                    {{ llama.text }}
+                    </li>
+                </ul>
+                <p><a v-bind:title="bestLlama" v-bind:href="wikiLlama">Llamas Wiki</a></p>
+            </div>
+
+
+            <div v-bind:style="styleObject">
+                <h1>{{ alpacaFacts }}</h1>
+                <ul>
+                    <li v-for="alpaca in alpacas" class="alpaca-facts-list">
+                      {{ alpaca.text }}
+                    </li>
+                  </ul>
+                <p><a v-bind:title="bestAlpaca" v-bind:href="wikiAlpaca">Alpacas Wiki</a></p>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="lib/script.js"></script>
+    </body>
+</html>
