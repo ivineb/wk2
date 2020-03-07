@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show & Tell Collection</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="app" v-cloak>
+            <h1> Latest Movie Tickets </h1>
+
+                <table v-bind:style="tableStyle">
+                    <thead v-bind:style="headStyle">
+                        <th>Movie</th>
+                        <th>Theater</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(movie, index) in myMovies" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+                            <td v-bind:style="{ fontWeight: movieWeight, fontSize: movieSize + 'em'}"> {{ movie.name.toUpperCase() }}</td>
+                            <td> {{ movie.theater }}</td>
+                            <td> {{ movie.date }}</td>
+                            <td> {{ movie.duration }}</td>
+                            <td v-bind:style="descriptionStyle"> {{ movie.description }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
