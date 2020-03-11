@@ -1,0 +1,32 @@
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background: lavender;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: navy;
+}
+div {
+    margin: 10px 0;
+    display: flex;
+}
+div.alpaca-status,
+div.alpaca-color,
+div.output {
+    flex-direction: column;
+}
+div label {
+    margin-right: 10px;
+}
+div input, div select {
+    flex-grow: 1;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+}
