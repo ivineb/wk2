@@ -1,0 +1,19 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2em;
+}
+#calcApp {
+    color: navy;
+    background: lightblue;
+    border-radius: 9px;
+    padding: 15px;
+    max-width: 400px;
+}
+button {
+    padding: 15px;
+    margin: 20px 0px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
