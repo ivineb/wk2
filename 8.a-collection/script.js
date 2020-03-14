@@ -80,7 +80,8 @@ var vm = new Vue({
         theater: '',
         date: null,
         duration: '',
-        description: ''
+        description: '',
+        image: ''
       };
     },
     deleteItem: item => {
