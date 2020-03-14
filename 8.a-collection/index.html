@@ -19,6 +19,7 @@
                             <th>Date</th>
                             <th>Duration</th>
                             <th>Description</th>
+                            <th>Poster</th>
                             <th>click!</th>
                         </tr>
                     </thead>
@@ -29,6 +30,7 @@
                             <td> {{ movie.date }}</td>
                             <td> {{ movie.duration }}</td>
                             <td id="desc" v-bind:style="descriptionStyle"> {{ movie.description }}</td>
+                            <td class="movie-image"> <img :src="movie.image" :alt="movie.image"> </td>
                             <td> <button class="my-button" type="button" v-on:click="deleteItem(movie)">Delete</button></td>
                         </tr>
                     </tbody>
@@ -64,6 +66,7 @@
                     </fieldset>
                 </form>
         </div>
+        <p>The art images are by <a href="https://www.deviantart.com/dahlia069/gallery">This artist.</a></p>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="script.js"></script>
