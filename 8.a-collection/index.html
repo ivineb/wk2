@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show & Tell Collection</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="app" v-cloak>
+            <h1> Movies Tickets </h1>
+
+                <table v-bind:style="tableStyle">
+                    <thead v-bind:style="headStyle">
+                        <tr>
+                            <th>Movie</th>
+                            <th>Theater</th>
+                            <th>Date</th>
+                            <th>Duration</th>
+                            <th>Description</th>
+                            <th>click!</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(movie, index) in movies" v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0}">
+                            <td v-bind:style="{ fontWeight: movieWeight, fontSize: movieSize + 'em'}"> {{ movie.name.toUpperCase() }}</td>
+                            <td> {{ movie.theater }}</td>
+                            <td> {{ movie.date }}</td>
+                            <td> {{ movie.duration }}</td>
+                            <td id="desc" v-bind:style="descriptionStyle"> {{ movie.description }}</td>
+                            <td> <button class="my-button" type="button" v-on:click="deleteItem(movie)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form v-on:submit.prevent="submitHandler" class="new-movie-form">
+                    <fieldset>
+
+                        <legend>Add a movie to the collection</legend>
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" v-model="newMovieObj.name">
+                        </div>
+                        <div>
+                            <label for="theater">Theater</label>
+                            <input id="theater" type="text" v-model="newMovieObj.theater">
+                        </div>
+                        <div>
+                            <label for="date">Date</label>
+                            <input id="date" type="date" v-model="newMovieObj.date">
+                        </div>
+                        <div>
+                            <label for="duration">Duration</label>
+                            <input id="duration" type="text" v-model="newMovieObj.duration">
+                        </div>
+                        <div>
+                            <label for="description">Description</label>
+                            <textarea id="description" type="text" v-model="newMovieObj.description"></textarea>
+                        </div>
+
+                        <button class="my-button" type="submit">Submit</button>
+
+                    </fieldset>
+                </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

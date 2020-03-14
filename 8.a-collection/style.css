@@ -1,0 +1,119 @@
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 2.5em;
+    background: #fff;
+}
+
+h1 {
+    color: #413c69;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+}
+
+.even {
+    background-color: #cbf1f5;
+}
+
+.odd {
+    background-color: #e3fdfd;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+head th:nth-child(1) {
+    width: 25%;
+}
+thead th:nth-child(2) {
+    width: 25%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 10%;
+}
+
+th, td {
+    padding: 24px;
+    text-align: center;
+}
+
+th {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+#desc {
+    text-align: left;
+    width: 350px;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+}
+
+textarea {
+    border: none;
+    border-radius: 9px;
+}
+
+.new-movie-form {
+    margin: 30px 0;
+}
+
+.new-movie-form fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #633a82;
+    background: lavender;
+    border: none;
+    max-width: 1295px;
+}
+
+.new-movie-form div {
+    margin: 20px 0;
+    width: 120px;
+}
+
+.new-movie-form div label {
+    max-width: 120px;
+}
+
+.new-movie-form input {
+    max-width: 270px;
+    display: block;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.my-button {
+    border: none;
+    padding: 0.8em;
+    border-radius: 7px;
+    color: white;
+    background: #71c9ce;
+    transition: all 0.4s ease 0s;
+}
+
+.my-button:hover {
+    background: rgb(228, 120, 228);
+    transition: all 0.4s ease 0s;
+    color: #413c69;
+    cursor: pointer;
+}
