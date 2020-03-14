@@ -81,8 +81,8 @@ textarea {
     align-items: center;
     color: #633a82;
     background: lavender;
-    border: none;
     max-width: 1295px;
+    border: none;
 }
 
 .new-movie-form div {
