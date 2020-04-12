@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 1em;
+    background: #b4c1cc;
+    color: #344955;
+    font-size: 14px;
+}
+form {
+    border-radius: 3px;
+    padding: 1.5em;
+    width: 30%;
+    background: #edf0f2;
+    margin: 2em auto;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+}
+form ~ h3 {
+    text-align: center;
+}
+label {
+    font-weight: bold;
+    display: block;
+}
+button {
+    border: none;
+    padding: 0.8em;
+    border-radius: 7px;
+    color: #eee;
+    background: #344955;
+    transition: all 0.4s ease 0s;
+    margin: 1em 0;
+}
+button:hover {
+    background: #ccc;
+    transition: all 0.4s ease 0s;
+    color: #111;
+    cursor: pointer;
+}
+input {
+    padding: 1em 0.3em;
+    border-radius: 7px;
+    margin: 1em 0;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+}
+input:focus {
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,.2), 0 2px 8px 4px rgba(60,64,67,.1);
+}
+.anime-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.anime {
+    width: 30%;
+    color: #767676;
+    border-radius: 7px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.anime-image {
+    display: flex;
+    height: 100%;
+    background: #edf0f2;
+}
+.anime img {
+    align-self: center;
+    display: block;
+    max-width: 100%;
+}
+.anime .series-details {
+    padding: .5em 1em;
+    box-sizing: border-box;
+}
+.anime h3 {
+    font-size: 1.25em;
+    color: #344955;
+    margin: 0 0 .5em;
+}
+.anime p {
+    margin: 0;
+}

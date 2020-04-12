@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Naruto</title>
+    </head>
+
+    <body>
+        <div id="demoApp">
+            <form v-on:submit.prevent="searchAnime">
+                <div>
+                    <label>Type in an Anime Keyword</label>
+                    <input v-model="searchQuery">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <h3>Results</h3>
+            <div class="anime-wrapper">
+                <my-anime v-for="anime in results" v-bind:anime="anime" v-bind:class="['anime']"></my-anime>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
