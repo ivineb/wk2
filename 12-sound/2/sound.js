@@ -2,8 +2,6 @@ var song;
 var fft;
 var button;
 
-var volhistory = [];
-
 function toggleSong() {
   if (song.isPlaying()) {
     song.pause();
