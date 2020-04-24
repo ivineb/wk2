@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 2.5em;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background: #71c9ce;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background: teal;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
