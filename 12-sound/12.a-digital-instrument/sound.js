@@ -1,16 +1,16 @@
-// var dropkick;
-// var pedal;
-// var metal;
-// var drill;
-// var drill2;
-// var plate;
-// var shovel;
-// var smash;
-// var glass;
-// var cling;
-// var shatter;
+var dropkick;
+var pedal;
+var metal;
+var drill;
+var drill2;
+var plate;
+var shovel;
+var smash;
+var glass;
+var cling;
+var shatter;
 const size = 400;
-var allSounds = [dropkick, pedal, metal, drill, drill2, plate, shovel, smash, glass, cling, shatter];
+// var allSounds = [dropkick, pedal, metal, drill, drill2, plate, shovel, smash, glass, cling, shatter];
 
 function preload () {
   dropkick = loadSound('dropkick.mp3');
