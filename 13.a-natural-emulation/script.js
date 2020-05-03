@@ -1,5 +1,5 @@
-// volcano!
-var volcanos = [];
+// Lava!
+var lavas = [];
 var amountOfCol = 6;
 var slider;
 
@@ -10,19 +10,19 @@ function setup () {
 
   // setting up a loop for the mountains with random width and height everytime
   for (var i = 0; i < amountOfCol; i++) {
-    volcanos[i] = new Volcano(random(width), height, random(80, 200), random(20, 80), random(80, 100), 50);
+    lavas[i] = new Lava(random(width), height, random(80, 200), random(20, 80), random(80, 100), 50);
   }
 }
 
 function draw () {
   background(50);
 
-  for (var i = 0; i < volcanos.length; i++) {
-    volcanos[i].draw();
+  for (var i = 0; i < lavas.length; i++) {
+    lavas[i].draw();
   }
 }
 
-function Volcano (x, y, tempWidth, tempTopWidth, tempHeight, amount) {
+function Lava (x, y, tempWidth, tempTopWidth, tempHeight, amount) {
   this.particles = [];
 
   this.x = x;
