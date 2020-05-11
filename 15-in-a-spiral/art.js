@@ -5,7 +5,6 @@ var speed = 0.002;
 var song;
 var button;
 var musicbutton;
-
 let hue = 0;
 
 // when we press the button the song & the loop pauses, when we press again they both play again
